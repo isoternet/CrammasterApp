@@ -16,8 +16,6 @@ class HomeFragment : Fragment() {
         binding = HomeFragmentBinding.inflate(layoutInflater)
         val view = binding.root
 
-        (activity as AppCompatActivity).setSupportActionBar(binding.appBar)
-
         return view
     }
 }

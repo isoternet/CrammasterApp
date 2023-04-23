@@ -18,4 +18,17 @@
 <!--        <item name="android:background">#494949</item>-->
 <!--        <item name="android:textColorPrimary">#FFFFFF</item>-->
     </style>
+
+    <style name="Widget.Crammaster.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="backgroundTint">?attr/colorPrimaryDark</item>
+    </style>
+
+    <style name="Widget.Crammaster.Button.TextButton" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
+    <style name="Widget.Crammaster.Drawer" parent="">
+        <item name="android:background">?attr/colorPrimary</item>
+    </style>
 </resources>
