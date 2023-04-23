@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tool="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tool:background="@color/material_dynamic_neutral20">
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Widget.Crammaster.Button.TextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center_vertical"
+            android:text="Home" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/material_dynamic_neutral30" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/start_here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Crammaster.Button.TextButton"
+            android:gravity="left|center_vertical"
+            android:text="Start Here" />
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/start_here_expandable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="true"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/welcome"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Welcome"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/syllabus"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Syllabus"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lab_report_instruction"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lab Report Instruction"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/project_instruction"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Project Instruction"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/material_dynamic_neutral30" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/learning_modules"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.Crammaster.Button.TextButton"
+            android:gravity="left|center_vertical"
+            android:text="Learning Modules" />
+
+        <net.cachapa.expandablelayout.ExpandableLayout
+            android:id="@+id/learning_modules_expandable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:el_duration="500"
+            app:el_expanded="true"
+            app:el_parallax="0.5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_1"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 1"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_2"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 2"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_3"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 3"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_4"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 4"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_5"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 5"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_6"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 6"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_7"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 7"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_8"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 8"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_9"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 9"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_10"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 10"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_11"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 11"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_12"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 12"
+                    android:layout_marginLeft="30dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/lesson_13"
+                    style="@style/Widget.Crammaster.Button.TextButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:text="Lesson 13"
+                    android:layout_marginLeft="30dp"/>
+
+            </LinearLayout>
+
+        </net.cachapa.expandablelayout.ExpandableLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/material_dynamic_neutral30" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</merge>

@@ -11,11 +11,17 @@
         android:layout_height="match_parent"
         android:gravity="left"
         android:orientation="vertical"
-        android:layout_marginLeft="-300dp"
-        android:paddingTop="100dp"
-        android:paddingBottom="100dp">
+        android:paddingTop="?attr/actionBarSize"
+        android:layout_marginLeft="-300dp">
 
-        <include layout="@layout/drawer_content" />
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <include layout="@layout/overlay_drawer_content" />
+
+        </androidx.core.widget.NestedScrollView>
 
     </LinearLayout>
 
@@ -29,7 +35,8 @@
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:navigationIcon="@drawable/menu"
-            app:title="CramMaster" />
+            app:title="CramMaster"
+            app:titleTextColor="#FFFFFF" />
     </com.google.android.material.appbar.AppBarLayout>
 
 </FrameLayout>
