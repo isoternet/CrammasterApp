@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">CrammasterApp</string>
 
+    <string name="welcome_content">Welcome to CS 4322 Mobile Application Development!  This is Mrs. Wang and I am looking forward to meeting you all. During this course, you will learn mobile application development environments, platforms, architecture, design and security.\n\nPlease review the Syllabus before you start the first module.\n\nCourse schedule can be found in the  Syllabus. The detailed content for each learning module can also be found at "Learning Modules" under "Content" tab.</string>
+
     <string-array name="slide_urls">
         <item>https://docs.google.com/presentation/d/1aStRnrhZv4R6vvY2I8YcrgZ6zA7k7ItPtAHcSWgaO2g/edit#slide=id.gb8cdc7f5e8_0_483</item>
         <item>https://docs.google.com/presentation/d/1Kk-pjfG8NReq6esTjwFrfAhtw6SS2TUFogkgWieYQZw/edit#slide=id.gb88056c3aa_0_416</item>

@@ -29,6 +29,10 @@ class OverlayFragment : Fragment() {
             (activity as NavigationHost).navigateTo(HomeFragment(), true)
         }
 
+        bindingDrawerContent.welcome.setOnClickListener {
+            (activity as NavigationHost).navigateTo(WelcomeFragment(), true)
+        }
+
         bindingDrawerContent.lesson1.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(1), true) }
         bindingDrawerContent.lesson2.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(2), true) }
         bindingDrawerContent.lesson3.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(3), true) }
