@@ -25,6 +25,25 @@ class OverlayFragment : Fragment() {
         bindingDrawerContent.startHere.setOnClickListener{ bindingDrawerContent.startHereExpandable.toggle() }
         bindingDrawerContent.learningModules.setOnClickListener{ bindingDrawerContent.learningModulesExpandable.toggle() }
 
+        bindingDrawerContent.home.setOnClickListener {
+            (activity as NavigationHost).navigateTo(HomeFragment(), true)
+        }
+
+        bindingDrawerContent.lesson1.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(1), true) }
+        bindingDrawerContent.lesson2.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(2), true) }
+        bindingDrawerContent.lesson3.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(3), true) }
+        bindingDrawerContent.lesson4.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(4), true) }
+        bindingDrawerContent.lesson5.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(5), true) }
+        bindingDrawerContent.lesson6.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(6), true) }
+        bindingDrawerContent.lesson7.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(7), true) }
+        bindingDrawerContent.lesson8.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(8), true) }
+        bindingDrawerContent.lesson9.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(9), true) }
+        bindingDrawerContent.lesson10.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(10), true) }
+        bindingDrawerContent.lesson11.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(11), true) }
+        bindingDrawerContent.lesson12.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(12), true) }
+        bindingDrawerContent.lesson13.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(13), true) }
+
+
         return binding.root
     }
 }

@@ -1,3 +1,35 @@
 <resources>
     <string name="app_name">CrammasterApp</string>
+
+    <string-array name="slide_urls">
+        <item>https://docs.google.com/presentation/d/1aStRnrhZv4R6vvY2I8YcrgZ6zA7k7ItPtAHcSWgaO2g/edit#slide=id.gb8cdc7f5e8_0_483</item>
+        <item>https://docs.google.com/presentation/d/1Kk-pjfG8NReq6esTjwFrfAhtw6SS2TUFogkgWieYQZw/edit#slide=id.gb88056c3aa_0_416</item>
+        <item>https://docs.google.com/presentation/d/1FSZwOeSwL-XNkMXnKDy-YPMEpCPKyb29RlpekSzzJDY/edit#slide=id.gb9961b3fa0_0_433</item>
+        <item>https://docs.google.com/presentation/d/1wu1c9Q_3mcPS1IjazDkci5-8nBJumCfWWY15B9EUjA0/edit#slide=id.gb87ea636ca_0_541</item>
+        <item>https://docs.google.com/presentation/d/13pmWTJiISYksgdK0iB4VPEBLUuciupvlD0Cn0Sy-1WI/edit#slide=id.gb87eded92d_0_482</item>
+        <item>https://docs.google.com/presentation/d/1QWLSLfkodgmd3nns8RRNXBCRL45p_0_249lSXiLE2rU/edit#slide=id.gb8b9b28be0_0_397</item>
+        <item>https://docs.google.com/presentation/d/1n3OCwb7kRx-y7Q_wYGLtRsDynyDf8e8xOM6_qBn-yY4/edit#slide=id.gb8d2a86dda_0_448</item>
+        <item>https://docs.google.com/presentation/d/10Qpt3z3-DASD-9AmADRBD_7AElM_5cLH4yf2HKgl4YY/edit#slide=id.gb8b649eef8_0_323</item>
+        <item>https://docs.google.com/presentation/d/1COEiWNknSmiI5RUgxumLrgscl9d-yvKoj6tjNF9jw5A/edit#slide=id.g796a0b0491_0_404</item>
+        <item>https://docs.google.com/presentation/d/1dMK7nkyNhbYDm3dxkwimerww4qWg4UuUT8s8c0GoSL8/edit#slide=id.gafc54c9b39_0_438</item>
+        <item>https://docs.google.com/presentation/d/1osOpeT2U4JnJpSP4YUk7SJ6qAsqxm4FIRw0q6CEvLRo/edit#slide=id.gb8d17af4dc_0_269</item>
+        <item>https://docs.google.com/presentation/d/1G_qhNKVzrfuc4y69XUkWpAPB7uDUE1tNtvimKTpGJKM/edit#slide=id.gb4409bc5e2_0_370</item>
+        <item>https://docs.google.com/presentation/d/1ANAfjVvrd8u58QY8_dCmyIc8NUC8AuktfThKMt0R3AI/edit#slide=id.gb9def153d9_0_464</item>
+    </string-array>
+
+    <string-array name="lab_urls">
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-1</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-2</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-3</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-4</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-5</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-6</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-7</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-8</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-9</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-10</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-11</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-12</item>
+        <item>https://developer.android.com/courses/pathways/android-development-with-kotlin-13</item>
+    </string-array>
 </resources>

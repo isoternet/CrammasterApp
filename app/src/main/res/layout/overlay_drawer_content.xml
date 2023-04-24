@@ -10,6 +10,7 @@
         tool:background="@color/material_dynamic_neutral20">
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/home"
             style="@style/Widget.Crammaster.Button.TextButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
