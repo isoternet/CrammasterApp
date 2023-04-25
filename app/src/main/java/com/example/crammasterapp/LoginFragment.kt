@@ -5,7 +5,9 @@ import android.text.Editable
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
+import com.example.crammasterapp.database.UserDatabase
 import com.example.crammasterapp.databinding.LoginFragmentBinding
 
 class LoginFragment : Fragment() {
@@ -17,28 +19,42 @@ class LoginFragment : Fragment() {
         binding = LoginFragmentBinding.inflate(layoutInflater)
         val view = binding.root
 
-        //error if password is less than 8 characters
-        binding.nextButton.setOnClickListener {
-            if (!isPasswordValid(binding.passwordEditText.text!!)) {
-                binding.passwordTextInput.error = "Password must contain at least 8 characters."
+        val application = requireNotNull(this.activity).application
+        val dataSource = UserDatabase.getInstance(application).userDatabaseDao
+
+
+        binding.loginButton.setOnClickListener {
+            val user = dataSource.get(binding.usernameEditText.text.toString())
+
+            if(user?.password.toString() != binding.passwordEditText.text.toString()) {
+                binding.passwordTextInput.error = "Incorrect username/password"
             } else {
-                binding.passwordTextInput.error = null
                 (activity as NavigationHost).navigateTo(HomeFragment(), false)
             }
         }
 
-        binding.passwordEditText.setOnKeyListener { _, _, _ ->
-            if (isPasswordValid(binding.passwordEditText.text!!)) {
-                // Clear the error.
-                binding.passwordEditText.error = null
+        binding.registerButton.setOnClickListener {
+            (activity as NavigationHost).navigateTo(RegistrationFragment(), false)
+        }
+
+        binding.printButton.setOnClickListener {
+            for (user in dataSource.getAllUsers()) {
+                println(user.username + " " + user.password)
             }
-            false
+        }
+
+        binding.clearButton.setOnClickListener {
+            dataSource.clear()
+        }
+
+        binding.loginText.setOnClickListener {
+            if(binding.debugLayout.isVisible) {
+                binding.debugLayout.visibility = View.GONE
+            } else {
+                binding.debugLayout.visibility = View.VISIBLE
+            }
         }
 
         return view
-    }
-
-    private fun isPasswordValid(text: Editable?): Boolean {
-        return text != null && text.length >= 8
     }
 }

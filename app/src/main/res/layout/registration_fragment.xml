@@ -16,21 +16,21 @@
         android:paddingTop="16dp">
 
         <TextView
-            android:id="@+id/login_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="70dp"
             android:layout_marginBottom="132dp"
             android:textSize="24dp"
-            android:text="Login" />
+            android:text="Registration" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username_text_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:hint="Username">
+            android:hint="Username"
+            app:errorEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username_edit_text"
@@ -53,54 +53,42 @@
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirm_password_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:hint="Confirm Password"
+            app:errorEnabled="true">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirm_password_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/login_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentRight="true"
-                android:text="Login" />
-
-            <com.google.android.material.button.MaterialButton
                 android:id="@+id/register_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginRight="12dp"
-                android:layout_toStartOf="@id/login_button"
-                android:layout_toLeftOf="@id/login_button"
-                android:text="Register" />
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:id="@+id/debug_layout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"
-            tools:visibility="visible">
-
-            <com.google.android.material.button.MaterialButton
-                android:id="@+id/print_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
                 android:layout_alignParentRight="true"
-                android:text="Print users" />
+                android:text="Register" />
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/clear_button"
+                android:id="@+id/cancel_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
                 android:layout_marginRight="12dp"
-                android:layout_toStartOf="@id/print_button"
-                android:layout_toLeftOf="@id/print_button"
-                android:text="Wipe users" />
-
+                android:layout_toStartOf="@id/register_button"
+                android:layout_toLeftOf="@id/register_button"
+                android:text="Cancel" />
         </RelativeLayout>
 
     </LinearLayout>
