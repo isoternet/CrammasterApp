@@ -1,21 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical">
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:strokeColor="@color/black"
+    app:strokeWidth="3dp">
 
-    <TextView
-        android:id="@+id/announcementTitle"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@+string/announcementTitle"
-        android:textStyle="bold"
-        android:textSize="35sp"/>
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/announcementTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AAAAAA"
+            android:paddingStart="10sp"
+            android:paddingEnd="0sp"
+            android:text="@+string/announcementTitle"
+            android:textColor="#3E3E3E"
+            android:textSize="35sp"
+            android:textStyle="bold" />
 
     <TextView
         android:id="@+id/announcementsBody"
+        android:text="@+string/announcementText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@+string/announcementText"
-        android:textSize="15sp"/>
-</LinearLayout>
+        android:background="#E1DFDF"
+        android:paddingStart="15sp"
+        android:paddingEnd="0sp"
+        android:paddingTop="5sp"
+        android:paddingBottom="10dp"
+        android:textSize="15sp" />
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>
+

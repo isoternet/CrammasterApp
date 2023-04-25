@@ -26,7 +26,8 @@ class LoginFragment : Fragment() {
         binding.loginButton.setOnClickListener {
             val user = dataSource.get(binding.usernameEditText.text.toString())
 
-            if(user?.password.toString() != binding.passwordEditText.text.toString()) {
+            //Replace false with user?.password.toString() != binding.passwordEditText.text.toString()
+            if(false) {
                 binding.passwordTextInput.error = "Incorrect username/password"
             } else {
                 (activity as NavigationHost).navigateTo(HomeFragment(), false)
