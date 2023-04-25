@@ -3,6 +3,10 @@ package com.example.crammasterapp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.example.crammasterapp.announcements.Announcements
+import com.example.crammasterapp.announcements.AnnouncementsAdapter
 
 class MainActivity : AppCompatActivity(), NavigationHost {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,4 +35,6 @@ class MainActivity : AppCompatActivity(), NavigationHost {
 
         transaction.commit()
     }
+
+
 }
