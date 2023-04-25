@@ -27,26 +27,33 @@ class RegistrationFragment : Fragment() {
 
             if(binding.usernameEditText.text.toString().isEmpty()) {
                 binding.usernameTextInput.error = "Username cannot be blank."
+                binding.usernameTextInput.boxBackgroundColor = resources.getColor(R.color.error_red)
                 goodCredentials = false
             } else if(dataSource.get(binding.usernameEditText.text.toString()) != null) {
                 binding.usernameTextInput.error = "This username already exists."
+                binding.usernameTextInput.boxBackgroundColor = resources.getColor(R.color.error_red)
                 goodCredentials = false
             } else {
                 binding.usernameTextInput.error = null
+                binding.usernameTextInput.boxBackgroundColor = resources.getColor(R.color.error_none)
             }
 
             if(!isPasswordValid(binding.passwordEditText.text)) {
                 binding.passwordTextInput.error = "Password must contain at least 8 characters."
+                binding.passwordTextInput.boxBackgroundColor = resources.getColor(R.color.error_red)
                 goodCredentials = false
             } else {
                 binding.passwordTextInput.error = null
+                binding.passwordTextInput.boxBackgroundColor = resources.getColor(R.color.error_none)
             }
 
             if(binding.passwordEditText.text.toString() != binding.confirmPasswordEditText.text.toString()) {
                 binding.confirmPasswordTextInput.error = "Passwords do not match."
+                binding.confirmPasswordTextInput.boxBackgroundColor = resources.getColor(R.color.error_red)
                 goodCredentials = false
             } else {
                 binding.confirmPasswordTextInput.error = null
+                binding.confirmPasswordTextInput.boxBackgroundColor = resources.getColor(R.color.error_none)
             }
 
             if (goodCredentials) {

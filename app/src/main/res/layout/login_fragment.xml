@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".LoginFragment">
+    tools:context=".LoginFragment"
+    android:background="@color/material_dynamic_neutral30">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,19 +24,23 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="132dp"
             android:textSize="24dp"
-            android:text="Login" />
+            android:text="Login"
+            android:textColor="@color/white"/>
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/username_text_input"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
-            android:hint="Username">
+            android:hint="Username"
+            style="@style/TextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username_edit_text"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:cursorVisible="false"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -44,13 +49,16 @@
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:hint="Password"
-            app:errorEnabled="true">
+            app:errorEnabled="true"
+            style="@style/TextInputLayoutStyle">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/password_edit_text"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="textPassword" />
+                android:inputType="textPassword"
+                android:textColor="@color/white"
+                android:cursorVisible="false"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <RelativeLayout

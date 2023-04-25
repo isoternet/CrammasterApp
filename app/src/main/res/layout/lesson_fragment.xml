@@ -20,7 +20,8 @@
             android:textSize="20sp"
             tools:text="Lesson 1"
             style="@style/Widget.Crammaster.Button.TextButton"
-            android:gravity="left|center_vertical"/>
+            android:gravity="left|center_vertical"
+            android:textAllCaps="false"/>
 
         <View
             android:layout_width="match_parent"

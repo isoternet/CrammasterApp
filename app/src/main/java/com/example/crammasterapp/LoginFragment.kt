@@ -28,7 +28,10 @@ class LoginFragment : Fragment() {
 
             if(user?.password.toString() != binding.passwordEditText.text.toString()) {
                 binding.passwordTextInput.error = "Incorrect username/password"
+                binding.passwordTextInput.boxBackgroundColor = resources.getColor(R.color.error_red)
             } else {
+                binding.passwordTextInput.error = null
+                binding.passwordTextInput.boxBackgroundColor = resources.getColor(R.color.error_none)
                 (activity as NavigationHost).navigateTo(HomeFragment(), false)
             }
         }
