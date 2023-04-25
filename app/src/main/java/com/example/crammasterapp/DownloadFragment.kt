@@ -8,8 +8,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.example.crammasterapp.databinding.DownloadFragmentBinding
-import com.pspdfkit.configuration.activity.PdfActivityConfiguration
-import com.pspdfkit.ui.PdfActivity
 
 class DownloadFragment(title: String, uri: String, projectProposal: Boolean) : Fragment() {
     private lateinit var binding: DownloadFragmentBinding
