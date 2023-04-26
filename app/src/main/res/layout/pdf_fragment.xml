@@ -30,11 +30,11 @@
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/download_button"
+            android:id="@+id/open_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Download" />
+            android:text="Open PDF" />
 
         <TextView
             android:id="@+id/project_proposal_title"
@@ -58,11 +58,11 @@
 
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/project_proposal_download_button"
+            android:id="@+id/project_proposal_open_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Download"
+            android:text="Open PDF"
             android:visibility="gone"/>
 
 

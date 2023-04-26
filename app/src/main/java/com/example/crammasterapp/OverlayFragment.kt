@@ -34,15 +34,15 @@ class OverlayFragment : Fragment() {
         }
 
         bindingDrawerContent.syllabus.setOnClickListener {
-            (activity as NavigationHost).navigateTo(DownloadFragment("Syllabus", resources.getString(R.string.syllabus), false), true)
+            (activity as NavigationHost).navigateTo(PdfFragment("Syllabus", "syllabus.pdf", false), true)
         }
 
         bindingDrawerContent.labReportInstruction.setOnClickListener {
-            (activity as NavigationHost).navigateTo(DownloadFragment("Lab Report Instruction", resources.getString(R.string.lab_report_instructions), false), true)
+            (activity as NavigationHost).navigateTo(PdfFragment("Lab Report Instruction", "lab-report-instruction.pdf", false), true)
         }
 
         bindingDrawerContent.projectInstruction.setOnClickListener {
-            (activity as NavigationHost).navigateTo(DownloadFragment("Project Instruction", resources.getString(R.string.project_instruction), true), true)
+            (activity as NavigationHost).navigateTo(PdfFragment("Project Instruction", "project-instruction.pdf", true), true)
         }
 
         bindingDrawerContent.lesson1.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(1), true) }
