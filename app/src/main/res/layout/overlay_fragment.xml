@@ -36,7 +36,18 @@
             android:layout_height="?attr/actionBarSize"
             app:navigationIcon="@drawable/menu"
             app:title="CramMaster"
-            app:titleTextColor="#FFFFFF" />
+            app:titleTextColor="#FFFFFF">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/logout_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:text="Logout"
+                android:layout_gravity="right|center_vertical"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp"/>
+        </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
 </FrameLayout>

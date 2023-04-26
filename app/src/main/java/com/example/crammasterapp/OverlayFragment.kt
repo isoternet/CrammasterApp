@@ -59,6 +59,9 @@ class OverlayFragment : Fragment() {
         bindingDrawerContent.lesson12.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(12), true) }
         bindingDrawerContent.lesson13.setOnClickListener { (activity as NavigationHost).navigateTo(LessonFragment(13), true) }
 
+        binding.logoutButton.setOnClickListener {
+            (activity as NavigationHost).navigateTo(LoginFragment(), false)
+        }
 
         return binding.root
     }
