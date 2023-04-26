@@ -58,12 +58,12 @@ class RegistrationFragment : Fragment() {
 
             if (goodCredentials) {
                 dataSource.insert(User(binding.usernameEditText.text.toString(), binding.passwordEditText.text.toString()))
-                (activity as NavigationHost).navigateTo(HomeFragment(), false)
+                (activity as NavigationHost).navigateTo(LoginFragment(true), false)
             }
         }
 
         binding.cancelButton.setOnClickListener {
-            (activity as NavigationHost).navigateTo(LoginFragment(), false)
+            (activity as NavigationHost).navigateTo(LoginFragment(false), false)
         }
 
         return view

@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity(), NavigationHost {
         setContentView(R.layout.main_activity)
 
         if (savedInstanceState == null) {
-            supportFragmentManager.beginTransaction().add(R.id.container, LoginFragment()).commit()
+            supportFragmentManager.beginTransaction().add(R.id.container, LoginFragment(false)).commit()
         }
     }
 
