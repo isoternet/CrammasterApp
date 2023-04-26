@@ -10,9 +10,10 @@ import androidx.fragment.app.Fragment
 import com.example.crammasterapp.database.UserDatabase
 import com.example.crammasterapp.databinding.LoginFragmentBinding
 
-class LoginFragment : Fragment() {
+class LoginFragment(accountConfirmation: Boolean) : Fragment() {
 
     private lateinit var binding: LoginFragmentBinding
+    private val accountConfirmation = accountConfirmation
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -22,6 +23,11 @@ class LoginFragment : Fragment() {
         val application = requireNotNull(this.activity).application
         val dataSource = UserDatabase.getInstance(application).userDatabaseDao
 
+        if(accountConfirmation) {
+            binding.confirmationText.visibility = View.VISIBLE
+        } else {
+            binding.confirmationText.visibility = View.GONE
+        }
 
         binding.loginButton.setOnClickListener {
             val user = dataSource.get(binding.usernameEditText.text.toString())
