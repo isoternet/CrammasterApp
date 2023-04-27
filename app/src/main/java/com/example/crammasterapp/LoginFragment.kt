@@ -26,7 +26,7 @@ class LoginFragment(accountConfirmation: Boolean) : Fragment() {
         if(accountConfirmation) {
             binding.confirmationText.visibility = View.VISIBLE
         } else {
-            binding.confirmationText.visibility = View.GONE
+            binding.confirmationText.visibility = View.INVISIBLE
         }
 
         binding.loginButton.setOnClickListener {
